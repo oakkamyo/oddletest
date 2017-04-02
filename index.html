@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html ng-app="user-angular">
+<head>
+	<title>List of Github Users By AngularJS</title>
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+	<script>document.write('<base href="' + document.location + '" />');</script>
+
+	<!-- Script JS -->
+	<script src="js/jquery.js" type="text/javascript"></script>
+	<script src="js/bootstrap.js" type="text/javascript"></script>
+	<script data-require="angular.js@1.4.x" src="https://code.angularjs.org/1.4.8/angular.js" data-semver="1.4.8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-route.min.js"></script>
+	<script src="app.js" type="text/javascript"></script>
+
+	<style type="text/css">
+
+		body{
+			background: #fcfcfc;
+		}
+
+		h5{
+			font-weight: bold;
+		}
+
+	    .row{
+	    	margin-top: 20px;
+	    }
+
+	    .col-md-4{
+	    	max-height: 330px;
+	    	margin-bottom: 15px;
+	    }
+
+	    img{
+	    	width: 250px;
+	    }
+
+	    .col-md-6{
+	    	border: 1px dashed #ccc;
+	    	word-wrap: break-word;
+	    	margin-bottom: 13px;
+	    	min-height: 1180px;
+	    }
+
+	    footer{
+	    	margin: 20px 0;
+	    }
+
+  	</style>
+</head>
+<body>
+
+	<header>
+		
+	</header>
+
+	<section>
+
+		<div class="container">
+			<div ng-view></div>
+		</div><!-- end container -->
+
+	</section>
+
+	<footer>
+		<div class="container">
+			<p class="text-center">Copyright &copy; 2017. All Right Reserved.</p>
+		</div>
+	</footer>
+	
+</body>
+</html>

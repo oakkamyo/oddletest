@@ -1,0 +1,75 @@
+
+  	<article ng-controller="DetailController">
+
+  		<div class="row">
+  			<a href="#/lists">Back to home page</a>
+  			<br />
+            <h3>Detail Page</h3>
+        </div>
+
+	    <div ng-repeat="x in details">
+
+	      	<div class="col-md-6">
+	      		<h5>Repository</h5>
+
+	      		<ul>
+	      			<li>ID: {{x.repo.id}}</li>
+	        		<li>Name: {{x.repo.name}} </li>
+	        		<li>Url: {{x.repo.url}}</li>
+	        		<li>Full Name: {{x.repo.full_name}}</li>
+	        		<li>login: {{x.payload.pull_request.owner.login}}</li>
+	           		<li>ID: {{x.payload.pull_request.owner.id}}</li>
+	           		<li>Avatar Url: {{x.payload.pull_request.owner.avatar_url}}</li>
+	           		<li>Gravatar ID: {{x.payload.pull_request.owner.gravatar_id}}</li>
+	           		<li>Url: {{x.payload.pull_request.owner.url}}</li>
+	           		<li>Html Url: {{x.payload.pull_request.owner.html_url}}</li>
+	           		<li>Followers Url: {{x.payload.pull_request.owner.followers_url}}</li>
+	           		<li>Following Url: {{x.payload.pull_request.owner.following_url}}</li>
+	           		<li>Gists Url: {{x.payload.pull_request.owner.gists_url}}</li>
+	           		<li>Starred Url: {{x.payload.pull_request.owner.starred_url}}</li>
+	           		<li>Subscriptions Url: {{x.payload.pull_request.owner.subscriptions_url}}</li>
+	           		<li>Organizations Url: {{x.payload.pull_request.owner.organizations_url}}</li>
+	           		<li>Repos Url: {{x.payload.pull_request.owner.repos_url}}</li>
+	           		<li>Events Url: {{x.payload.pull_request.owner.events_url}}</li>
+	           		<li>Received Events Url: {{x.payload.pull_request.owner.received_events_url}}</li>
+	           		<li>Type: {{x.payload.pull_request.owner.type}}</li>
+	           		<li>Site Admin: {{x.payload.pull_request.owner.site_admin}}</li>
+	      		</ul>
+
+	      		<h5>Payload</h5>
+	      		<ul>
+	      			<li>ID: {{x.payload.ref}}</li>
+	           		<li>Referene: {{x.payload.ref_type}}</li>
+	           		<li>Pusher Type: {{x.payload.pusher_type}}</li>
+	           		<li>Url: {{x.payload.pull_request.url}}</li>
+	           		<li>ID: {{x.payload.pull_request.id}}</li>
+	           		<li>Html Url: {{x.payload.pull_request.html_url}}</li>
+	           		<li>Diff Url: {{x.payload.pull_request.diff_url}}</li>
+	           		<li>Patch Url {{x.payload.pull_request.patch_url}}</li>
+	           		<li>Issue Url: {{x.payload.pull_request.issue_url}}</li>
+	           		<li>Number: {{x.payload.pull_request.number}}</li>
+	           		<li>State: {{x.payload.pull_request.state}}</li>
+	           		<li>locked: {{x.payload.pull_request.locked}}</li>
+	           		<li>Title: {{x.payload.pull_request.title}}</li>
+	           		<li>login: {{x.payload.pull_request.user.login}}</li>
+	           		<li>ID: {{x.payload.pull_request.user.id}}</li>
+	           		<li>Avatar Url: {{x.payload.pull_request.user.avatar_url}}</li>
+	           		<li>Gravatar ID: {{x.payload.pull_request.user.gravatar_id}}</li>
+	           		<li>Url: {{x.payload.pull_request.user.url}}</li>
+	           		<li>Html Url: {{x.payload.pull_request.user.html_url}}</li>
+	           		<li>Followers Url: {{x.payload.pull_request.user.followers_url}}</li>
+	           		<li>Following Url: {{x.payload.pull_request.user.following_url}}</li>
+	           		<li>Gists Url: {{x.payload.pull_request.user.gists_url}}</li>
+	           		<li>Starred Url: {{x.payload.pull_request.user.starred_url}}</li>
+	           		<li>Subscriptions Url: {{x.payload.pull_request.user.subscriptions_url}}</li>
+	           		<li>Organizations Url: {{x.payload.pull_request.user.organizations_url}}</li>
+	           		<li>Repos Url: {{x.payload.pull_request.user.repos_url}}</li>
+	           		<li>Events Url: {{x.payload.pull_request.user.events_url}}</li>
+	           		<li>Received Events Url: {{x.payload.pull_request.user.received_events_url}}</li>
+	           		<li>Type: {{x.payload.pull_request.user.type}}</li>
+	           		<li>Site Admin: {{x.payload.pull_request.user.site_admin}}</li>
+	      		</ul>
+	      	</div><!-- end col-md-6 -->
+
+	    </div>
+  	</article>
